@@ -202,6 +202,7 @@ namespace BetterBootlegStuff3
                 {
                     var a = new Vector2Int(chunkColumn, chunkRow);
                     var chunkRenderer = _chunkRenderers[chunkColumn, chunkRow];
+                    Gizmos.color = Color.white;
                     Gizmos.DrawWireCube(chunkRenderer.transform.position, chunkRenderer.transform.lossyScale);
 
                     if (_chunks != null)
@@ -214,10 +215,14 @@ namespace BetterBootlegStuff3
                         var startGlobalPosition = 
                             WorldPositionAtGlobalTilePosition(a * _chunkDimensions + dirtyRect.StartTilePosition);
                         var endGlobalPosition =
-                            WorldPositionAtGlobalTilePosition(a * _chunkDimensions + dirtyRect.StartTilePosition);
+                            WorldPositionAtGlobalTilePosition(a * _chunkDimensions + dirtyRect.EndTilePosition);
 
                         Gizmos.color = Color.green;
                         Gizmos.DrawLine(startGlobalPosition, new Vector2(startGlobalPosition.x, endGlobalPosition.y));
+                        Gizmos.DrawLine(startGlobalPosition, new Vector2(endGlobalPosition.x, startGlobalPosition.y));
+                        Gizmos.DrawLine(endGlobalPosition, new Vector2(startGlobalPosition.x, endGlobalPosition.y));
+                        Gizmos.DrawLine(endGlobalPosition, new Vector2(endGlobalPosition.x, startGlobalPosition.y));
+
                     }
                 }
             }

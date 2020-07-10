@@ -82,6 +82,7 @@ namespace BetterBootlegStuff3
         public TileUpdateResult? Update(TileUpdateApi api)
         {
             Side? wantedMovement = null;
+            bool? wantToGoStale = null;
             
             if (!api.TileExistsAt(Side.South))
             {
@@ -100,11 +101,16 @@ namespace BetterBootlegStuff3
                 {
                     wantedMovement = randomCornerSide2;
                 }
+                else
+                {
+                    wantToGoStale = true;
+                }
             }
             
             return new TileUpdateResult
             {
-                WantedMovement = wantedMovement
+                WantedMovement = wantedMovement,
+                WantToGoStale = wantToGoStale
             };
         }
     }

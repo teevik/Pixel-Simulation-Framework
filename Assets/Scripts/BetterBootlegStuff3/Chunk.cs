@@ -42,17 +42,53 @@ namespace BetterBootlegStuff3
         
         public void FixedUpdate()
         {
-            for (var x = 0; x < _chunkDimensions.x; x++)
+
+            if (_unstaleTiles.Count == 0)
             {
-                for (var y = 0; y < _chunkDimensions.y; y++)
+                _dirtyRect = new DirtyRect
+                {
+                    EndTilePosition = Vector2Int.zero,
+                    StartTilePosition = Vector2Int.zero
+                };
+            }
+            else
+            {
+                var startDirtyRectZone = _chunkDimensions;
+                var endDirtyRectZone = Vector2Int.zero;
+
+                foreach (var unstaleTile in _unstaleTiles)
+                {
+                    var tilePosition = _tilePositions[unstaleTile].Value;
+
+                    if (tilePosition.x > endDirtyRectZone.x) endDirtyRectZone.x = tilePosition.x;
+                    if (tilePosition.x < startDirtyRectZone.x) startDirtyRectZone.x = tilePosition.x;
+                    if (tilePosition.y > endDirtyRectZone.y) endDirtyRectZone.y = tilePosition.y;
+                    if (tilePosition.y < startDirtyRectZone.y) startDirtyRectZone.y = tilePosition.y;
+                }
+
+                startDirtyRectZone -= Vector2Int.one;
+                endDirtyRectZone += Vector2Int.one;
+                startDirtyRectZone.Clamp(Vector2Int.zero, _chunkDimensions);
+                endDirtyRectZone.Clamp(Vector2Int.zero, _chunkDimensions);
+
+                _dirtyRect = new DirtyRect
+                {
+                    StartTilePosition = startDirtyRectZone,
+                    EndTilePosition = endDirtyRectZone
+                };
+            }
+            
+            for (var x = _dirtyRect.StartTilePosition.x; x < _dirtyRect.EndTilePosition.x; x++)
+            {
+                for (var y = _dirtyRect.StartTilePosition.y; y < _dirtyRect.EndTilePosition.y; y++)
                 {
                     var tile = _tiles[x, y];
                     
                     if (tile == null) continue;
                     var tileData = _tileDatas[tile].Value;
                     
-                    if (!tileData.IsStale)
-                    {
+                    // if (!tileData.IsStale)
+                    // {
                         if (tileData.LastFrameUpdated == Time.frameCount) continue;
 
                         var newTileData = tileData;
@@ -75,9 +111,8 @@ namespace BetterBootlegStuff3
                         
                         if (updateResult == null) continue;
 
-                        if (!tileData.IsStale && (updateResult.Value.WantToGoStale ?? false))
+                        if (updateResult.Value.WantToGoStale ?? false)
                         {
-                            newTileData.IsStale = true;
                             _unstaleTiles.Remove(tile);
                             _tileDatas[tile] = newTileData;
                         }
@@ -96,7 +131,7 @@ namespace BetterBootlegStuff3
                                 TryMoveTileRelative(new Vector2Int(x, y), updateResult.Value.WantedMovement.Value);   
                             }
                         }
-                    }
+                    // }
                 } 
             }
         }
@@ -154,7 +189,6 @@ namespace BetterBootlegStuff3
             var tileData = new TileData()
             {
                 CurrentColor = tile.DefaultColor,
-                IsStale = tile.DefaultIsStale,
                 LastFrameUpdated = 0
             };
             
@@ -167,7 +201,8 @@ namespace BetterBootlegStuff3
             _tiles[tilePosition.x, tilePosition.y] = tile;
             _tilePositions[tile] = tilePosition;
             _tileDatas[tile] = tileData;
-            _unstaleTiles.Add(tile);
+            
+            if (!tile.DefaultIsStale) _unstaleTiles.Add(tile);
             
             DrawTile(tilePosition, tileData.CurrentColor);
         }

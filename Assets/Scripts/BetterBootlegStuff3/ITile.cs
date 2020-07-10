@@ -28,6 +28,5 @@ namespace BetterBootlegStuff3
     {
         public int LastFrameUpdated;
         public Color CurrentColor;
-        public bool IsStale;
     }
 }

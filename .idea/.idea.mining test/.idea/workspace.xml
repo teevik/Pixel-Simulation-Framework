@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b609e69-989d-4d9a-8332-2f2091d33311" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/8d/572f72c7/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/b6/b0e53bf2/IDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/42/3475168c/Gradient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/MakeFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/DrawStuff.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/ColorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/PixParticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/SnowFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98DA2062-F8D5-40E1-9AAE-F2038A83C747/f2/016e357f/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BettererBootlegStuff/NewPixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/StatsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/DropSand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/7c/57c4aa0b/ArgumentOutOfRangeException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/GoBoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/11/82a39957/Material.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/Bomb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/test4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/LivePixel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/PixelSurface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/a1/2c8ebd93/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/b2/cbfbcdca/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/da/678543d5/Tuple`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshRendererSortingEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94BB5EA3-183B-4D60-BD28-194FD649D6B5/13/a42402d9/ValidateInputAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/NativeQuadTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.1-preview.4/Unity.Entities/World.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterSnowFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.1-preview.4/Unity.Entities/World.Deprecated.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PixWater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhysicsTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test5.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PairedDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PixelPerfectCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test6.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/69/65258018/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/73/020d458c/Tuple`3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/Texture2DExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/c7/49987bcc/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BootlegStuff/BootlegPixelSurface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94BB5EA3-183B-4D60-BD28-194FD649D6B5/c6/02dc0abc/ReadOnlyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/Vector2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/90/01031a80/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/cb/d9ee10b1/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff/StatsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterererBootlegStuff/NewestPixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Side.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/StatsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/10/c8c33bcc/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98DA2062-F8D5-40E1-9AAE-F2038A83C747/e9/ce090a20/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/bd/2e819a0f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B70370F7-C0E5-48A9-AC87-525F3ABD0EF9/fb/1cacfc71/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/BootlegPixelSurface.cs" />
+        <option value="$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/LivePixel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PixWater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeshRendererSortingEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterSnowFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BootlegStuff/BootlegPixelSurface.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/PixelSimulationTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/Texture2DExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/Vector2Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff/StatsDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test5.cs" />
+        <option value="$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/PixelSurface.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BettererBootlegStuff/NewPixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test6.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.1.1/Runtime/2D/ShadowCaster2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterererBootlegStuff/NewestPixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhysicsTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/StatsDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/test4.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/test4.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PairedDictionary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriDirectionalDictionary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Side.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Neighbors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test4.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ng79ox2d" />
+  </component>
+  <component name="ProjectId" id="1ZttMu7ogh8ww57eJb5zeYkEbVl" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b609e69-989d-4d9a-8332-2f2091d33311" name="Default Changelist" comment="" />
+      <created>1585670173836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585670173836</updated>
+      <workItem from="1585670175033" duration="50000" />
+      <workItem from="1585670353881" duration="6274000" />
+      <workItem from="1585728264532" duration="16913000" />
+      <workItem from="1585753744298" duration="32865000" />
+      <workItem from="1585900323509" duration="25910000" />
+      <workItem from="1586008376642" duration="16620000" />
+      <workItem from="1586095897483" duration="2157000" />
+      <workItem from="1586559128974" duration="2188000" />
+      <workItem from="1594027511377" duration="3563000" />
+      <workItem from="1594031343650" duration="1151000" />
+      <workItem from="1594032511456" duration="98000" />
+      <workItem from="1594032627636" duration="143000" />
+      <workItem from="1594032790784" duration="739000" />
+      <workItem from="1594212581384" duration="3337000" />
+      <workItem from="1594306227949" duration="3157000" />
+      <workItem from="1594318852910" duration="15304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="PlayMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="160" key="#Plugins" timestamp="1594032540128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="160" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1594032540128" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.3.bottom" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.3.center" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.3.left" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state width="1877" height="348" key="GridCell.Tab.3.right" timestamp="1585844471328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
+    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1594030644176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594030644176" />
+    <state x="567" y="124" width="995" height="711" key="SettingsEditor" timestamp="1594372830456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="124" width="995" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594372830456" />
+    <state x="715" y="364" key="cloudConfig.PluginsDialog" timestamp="1586129148901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="364" key="cloudConfig.PluginsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586129148901" />
+    <state x="715" y="364" key="cloudConfig.SelfSettingsDialog" timestamp="1586129134589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="364" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586129134589" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1585844192817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585844192817" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586559361496">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586559361496" />
+  </component>
+</project>

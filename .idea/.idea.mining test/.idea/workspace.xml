@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b609e69-989d-4d9a-8332-2f2091d33311" name="Default Changelist" comment="" />
+    <list default="true" id="7b609e69-989d-4d9a-8332-2f2091d33311" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/PixelSimulation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/PixelSimulation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Tile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Tile.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Side.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Side.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +48,12 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/8d/572f72c7/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/b6/b0e53bf2/IDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/b6/b0e53bf2/IDictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/42/3475168c/Gradient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/MakeFire.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/DrawStuff.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +72,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/test4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/LivePixel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/PixelSurface/PixelSurface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/75/067b9f57/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/a1/2c8ebd93/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/b2/cbfbcdca/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/da/678543d5/Tuple`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,13 +82,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/NativeQuadTree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.1-preview.4/Unity.Entities/World.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/NativeQuadTreeRangeQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterSnowFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/AABB2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/LookupTables.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.1-preview.4/Unity.Entities/World.Deprecated.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PixWater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PhysicsTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/Editor/QuadTreeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test5.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PairedDictionary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PixelPerfectCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,10 +114,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/PixelSimulation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Side.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/StatsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/10/c8c33bcc/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98DA2062-F8D5-40E1-9AAE-F2038A83C747/e9/ce090a20/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/8b/459c8315/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/bd/2e819a0f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B70370F7-C0E5-48A9-AC87-525F3ABD0EF9/fb/1cacfc71/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -111,12 +150,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff2/PixelSimulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PairedDictionary.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriDirectionalDictionary.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Side.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Neighbors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test4.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Tile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Tile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Side.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" />
       </list>
     </option>
   </component>
@@ -182,6 +226,8 @@
       <workItem from="1594212581384" duration="3337000" />
       <workItem from="1594306227949" duration="3157000" />
       <workItem from="1594318852910" duration="15304000" />
+      <workItem from="1594372856493" duration="580000" />
+      <workItem from="1594373453436" duration="22430000" />
     </task>
     <servers />
   </component>
@@ -190,6 +236,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="PlayMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -262,14 +319,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585844471328" />
-    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1594030644176">
+    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1594383139407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594030644176" />
-    <state x="567" y="124" width="995" height="711" key="SettingsEditor" timestamp="1594372830456">
+    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594383139407" />
+    <state x="567" y="124" width="995" height="711" key="SettingsEditor" timestamp="1594384943077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="124" width="995" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594372830456" />
+    <state x="567" y="124" width="995" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594384943077" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1594396695868">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594396695868" />
     <state x="715" y="364" key="cloudConfig.PluginsDialog" timestamp="1586129148901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -282,9 +343,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585844192817" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586559361496">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594394338201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586559361496" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594394338201" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Extensions;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -66,14 +67,59 @@ namespace BetterBootlegStuff3
             }
         }
 
+        private void FixedUpdate()
+        {
+            foreach (var chunk in _chunks)
+            {
+                chunk.FixedUpdate();
+            }
+        }
+        
+        private void LateUpdate()
+        {
+            foreach (var chunk in _chunks)
+            {
+                chunk.LateUpdate();
+            }
+        }
+        
+        public Vector3 WorldPositionAtGlobalTilePosition(Vector2Int globalTilePosition)
+        {
+            return transform.TransformPoint(new Vector3(globalTilePosition.x / _pixelsPerUnit,
+                globalTilePosition.y / _pixelsPerUnit,
+                0));
+        }
+        
+        public Vector2Int GlobalTilePositionAtWorldPosition(Vector3 worldPosition)
+        {
+            var position = transform.InverseTransformPoint(worldPosition);
+            var x = Mathf.RoundToInt(position.x * _pixelsPerUnit);
+            var y = Mathf.RoundToInt(position.y * _pixelsPerUnit);
+            
+            return new Vector2Int(x, y);
+        }
+
+        public bool FindTilePosition(Vector2Int globalTilePosition, out Chunk chunk, out Vector2Int tilePosition)
+        {
+            var chunkPosition = ((Vector2) globalTilePosition / (Vector2) _chunkDimensions).FloorToVector2Int();
+
+            if (ChunkIsInBounds(chunkPosition))
+            {
+                chunk = _chunks[chunkPosition.x, chunkPosition.y];
+                tilePosition = globalTilePosition - (chunkPosition * _chunkDimensions);
+                return true;
+            }
+
+            chunk = null;
+            tilePosition = default;
+            return false;
+        }
+
         private bool ChunkIsInBounds(Vector2Int chunkPosition)
         {
-            var columns = _amountOfChunks.x;
-            var rows = _amountOfChunks.y;
-
             return 
-                chunkPosition.x >= 0 && chunkPosition.x < columns && 
-                chunkPosition.y >= 0 && chunkPosition.y < rows;
+                chunkPosition.x >= 0 && chunkPosition.x < _amountOfChunks.x && 
+                chunkPosition.y >= 0 && chunkPosition.y < _amountOfChunks.y;
         }
         
         private Dictionary<Side, Chunk> GetNeighborsOfChunk(Vector2Int chunkPosition)
@@ -150,9 +196,30 @@ namespace BetterBootlegStuff3
 
         private void OnDrawGizmos()
         {
-            foreach (var chunkRenderer in _chunkRenderers)
+            for (var chunkColumn = 0; chunkColumn < _amountOfChunks.x; chunkColumn++)
             {
-                Gizmos.DrawWireCube(chunkRenderer.transform.position, chunkRenderer.transform.lossyScale);
+                for (var chunkRow = 0; chunkRow < _amountOfChunks.y; chunkRow++)
+                {
+                    var a = new Vector2Int(chunkColumn, chunkRow);
+                    var chunkRenderer = _chunkRenderers[chunkColumn, chunkRow];
+                    Gizmos.DrawWireCube(chunkRenderer.transform.position, chunkRenderer.transform.lossyScale);
+
+                    if (_chunks != null)
+                    {
+                        var chunk = _chunks[chunkColumn, chunkRow];
+                        var dirtyRect = chunk.DirtyRect;
+                        // var startPercentage = (Vector2)dirtyRect.StartTilePosition / (Vector2)_chunkDimensions;
+                        // var endPercentage = (Vector2)dirtyRect.StartTilePosition / (Vector2)_chunkDimensions;
+
+                        var startGlobalPosition = 
+                            WorldPositionAtGlobalTilePosition(a * _chunkDimensions + dirtyRect.StartTilePosition);
+                        var endGlobalPosition =
+                            WorldPositionAtGlobalTilePosition(a * _chunkDimensions + dirtyRect.StartTilePosition);
+
+                        Gizmos.color = Color.green;
+                        Gizmos.DrawLine(startGlobalPosition, new Vector2(startGlobalPosition.x, endGlobalPosition.y));
+                    }
+                }
             }
         }
     }

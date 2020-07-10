@@ -15,7 +15,7 @@ public enum Side
 
 public static class SideExtensions
 {
-    public static readonly Dictionary<Side, Vector2Int> sideVectorMap = new Dictionary<Side, Vector2Int>()
+    public static readonly PairedDictionary<Side, Vector2Int> sideVectorMap = new PairedDictionary<Side, Vector2Int>()
     {
         [Side.North] = Vector2Int.up,
         [Side.NorthEast] = Vector2Int.up + Vector2Int.right,
@@ -30,5 +30,10 @@ public static class SideExtensions
     public static Vector2Int SideAsVector(this Side side)
     {
         return sideVectorMap[side];
+    }
+    
+    public static Side VectorAsSide(this Vector2Int vector)
+    {
+        return sideVectorMap[vector];
     }
 }

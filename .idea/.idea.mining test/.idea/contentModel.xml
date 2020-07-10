@@ -427,6 +427,11 @@
           </e>
           <e p="BetterBootlegStuff3" t="Include">
             <e p="Chunk.cs" t="Include" />
+            <e p="ITile.cs" t="Include" />
+            <e p="PixelSimulation.cs" t="Include" />
+            <e p="Stuff3Testing.cs" t="Include" />
+          </e>
+          <e p="BetterBootlegStuff4" t="Include">
             <e p="PixelSimulation.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
           </e>

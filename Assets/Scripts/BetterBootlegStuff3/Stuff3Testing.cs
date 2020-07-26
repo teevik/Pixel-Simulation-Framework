@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace BetterBootlegStuff3
 {
@@ -69,6 +70,15 @@ namespace BetterBootlegStuff3
     
     public class SandTile : ITile
     {
+        public static Gradient gradient = new Gradient
+        {
+            colorKeys = new GradientColorKey[]
+            {
+                new GradientColorKey(new Color(208f/255f, 191f/255f, 146f/255f), 0f), 
+                new GradientColorKey(new Color(222f/255f, 205f/255f, 159f/255f), 1f)
+            }
+        };
+        
         public bool DefaultIsStale => false;
         public Color DefaultColor => _color;
 
@@ -76,7 +86,7 @@ namespace BetterBootlegStuff3
 
         public SandTile(Color color)
         {
-            _color = color;
+            _color = gradient.Evaluate(Random.value);
         }
 
         public TileUpdateResult? Update(TileUpdateApi api)
@@ -117,6 +127,15 @@ namespace BetterBootlegStuff3
     
     public class WaterTile : ITile
     {
+        public static Gradient gradient = new Gradient
+        {
+            colorKeys = new GradientColorKey[]
+            {
+                new GradientColorKey(new Color(64f/255f, 167f/255f, 218f/255f), 0f), 
+                new GradientColorKey(new Color(81f/255f, 181f/255f, 233f/255f), 1f)
+            }
+        };
+
         public bool DefaultIsStale => false;
         public Color DefaultColor => _color;
 
@@ -124,12 +143,23 @@ namespace BetterBootlegStuff3
 
         public WaterTile(Color color)
         {
-            _color = color;
+            _color = gradient.Evaluate(Random.value);
         }
+
+        private int framesSinceChangedColor = 0;
 
         public TileUpdateResult? Update(TileUpdateApi api)
         {
             Side? wantedMovement = null;
+            Color? wantedColor = null;
+            bool? wantToGoStale = null;
+
+            framesSinceChangedColor += 1;
+            if (framesSinceChangedColor > 10)
+            {
+                framesSinceChangedColor = 0;
+                wantedColor = gradient.Evaluate(Random.value);
+            }
             
             if (!api.TileExistsAt(Side.South))
             {
@@ -160,12 +190,18 @@ namespace BetterBootlegStuff3
                     {
                         wantedMovement = randomSide2;
                     }
+                    else
+                    {
+                        wantToGoStale = true;
+                    }
                 }
             }
             
             return new TileUpdateResult
             {
-                WantedMovement = wantedMovement
+                WantedMovement = wantedMovement,
+                WantedColor = wantedColor,
+                WantToGoStale = wantToGoStale
             };
         }
     }

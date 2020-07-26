@@ -7,6 +7,10 @@ namespace BetterBootlegStuff3
         public delegate bool TileExistsAtDelegate(Side side);
 
         public TileExistsAtDelegate TileExistsAt;
+        
+        public delegate ITile GetTileAtSideDelegate(Side side);
+
+        public GetTileAtSideDelegate GetTileAtSide;
     }
     
     public struct TileUpdateResult

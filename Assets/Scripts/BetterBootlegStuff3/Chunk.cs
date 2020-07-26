@@ -87,51 +87,60 @@ namespace BetterBootlegStuff3
                     if (tile == null) continue;
                     var tileData = _tileDatas[tile].Value;
                     
-                    // if (!tileData.IsStale)
-                    // {
-                        if (tileData.LastFrameUpdated == Time.frameCount) continue;
+                    if (tileData.LastFrameUpdated == Time.frameCount) continue;
 
-                        var newTileData = tileData;
-                            newTileData.LastFrameUpdated = Time.frameCount;
+                    var newTileData = tileData;
+                        newTileData.LastFrameUpdated = Time.frameCount;
 
-                        bool ApiTileExistsAt(Side side)
+                    bool ApiTileExistsAt(Side side)
+                    {
+                        if (GetNeighboringTilePosition(new Vector2Int(x, y), side, out var neighborTilePosition, out var neighborChunk))
                         {
-                            if (GetNeighboringTilePosition(new Vector2Int(x, y), side, out var neighborTilePosition, out var neighborChunk))
-                            {
-                                return neighborChunk.TileExistsAt(neighborTilePosition);
-                            }
-
-                            return true;
+                            return neighborChunk.TileExistsAt(neighborTilePosition);
                         }
-                            
-                        var updateResult = tile.Update(new TileUpdateApi
+
+                        return true;
+                    }
+                    
+                    ITile ApiGetTileAtSide(Side side)
+                    {
+                        if (GetNeighboringTilePosition(new Vector2Int(x, y), side, out var neighborTilePosition, out var neighborChunk))
                         {
-                            TileExistsAt = ApiTileExistsAt
-                        });
+                            if (neighborChunk.TileExistsAt(neighborTilePosition))
+                                return neighborChunk._tiles[neighborTilePosition.x, neighborTilePosition.y];
+                        }
+
+                        return null;
+                    }
                         
-                        if (updateResult == null) continue;
+                    var updateResult = tile.Update(new TileUpdateApi
+                    {
+                        TileExistsAt = ApiTileExistsAt,
+                        GetTileAtSide = ApiGetTileAtSide
+                    });
+                    
+                    if (updateResult == null) continue;
 
-                        if (updateResult.Value.WantToGoStale ?? false)
+                    if (updateResult.Value.WantToGoStale ?? false)
+                    {
+                        _unstaleTiles.Remove(tile);
+                        _tileDatas[tile] = newTileData;
+                    }
+                    else
+                    {
+                        if (updateResult.Value.WantedMovement == null && updateResult.Value.WantedColor != null)
                         {
-                            _unstaleTiles.Remove(tile);
-                            _tileDatas[tile] = newTileData;
+                            DrawTile(new Vector2Int(x, y), updateResult.Value.WantedColor.Value);
+                            newTileData.CurrentColor = updateResult.Value.WantedColor.Value;
                         }
-                        else
+                        
+                        _tileDatas[tile] = newTileData;
+                        
+                        if (updateResult.Value.WantedMovement != null)
                         {
-                            if (updateResult.Value.WantedMovement == null && updateResult.Value.WantedColor != null)
-                            {
-                                DrawTile(new Vector2Int(x, y), updateResult.Value.WantedColor.Value);
-                                newTileData.CurrentColor = updateResult.Value.WantedColor.Value;
-                            }
-                            
-                            _tileDatas[tile] = newTileData;
-                            
-                            if (updateResult.Value.WantedMovement != null)
-                            {
-                                TryMoveTileRelative(new Vector2Int(x, y), updateResult.Value.WantedMovement.Value);   
-                            }
+                            TryMoveTileRelative(new Vector2Int(x, y), updateResult.Value.WantedMovement.Value);   
                         }
-                    // }
+                    }
                 } 
             }
         }

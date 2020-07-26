@@ -12,9 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7b609e69-989d-4d9a-8332-2f2091d33311" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mining test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene/Global Volume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/8d/572f72c7/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/87/5eacb250/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/b6/b0e53bf2/IDictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/42/3475168c/Gradient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PixelSurface/DemoScripts/MakeFire.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,8 +66,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E98ED036-8295-432E-8C11-E52D6243EE11/75/067b9f57/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94C5F4C3-8CDC-42D2-B006-F8BADEF04394/a1/2c8ebd93/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/b2/cbfbcdca/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GameScene.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/da/678543d5/Tuple`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/21BBF68D-61D6-4A2A-A5C3-E180E6B6706D/27/c175b7bf/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/21BBF68D-61D6-4A2A-A5C3-E180E6B6706D/27/c175b7bf/HashSet`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshRendererSortingEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94BB5EA3-183B-4D60-BD28-194FD649D6B5/13/a42402d9/ValidateInputAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/NativeQuadtree/NativeQuadTree.cs" root0="FORCE_HIGHLIGHTING" />
@@ -146,9 +150,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/PixelSimulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff4/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Side.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/PixelSimulation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/ITile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Stuff3Testing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BetterBootlegStuff3/Chunk.cs" />
       </list>
     </option>
@@ -217,6 +221,7 @@
       <workItem from="1594318852910" duration="15304000" />
       <workItem from="1594372856493" duration="580000" />
       <workItem from="1594373453436" duration="23990000" />
+      <workItem from="1595775401003" duration="521000" />
     </task>
     <task id="LOCAL−00001" summary="before removing IsStale">
       <created>1594406881811</created>
@@ -242,6 +247,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -321,6 +327,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594383139407" />
+    <state x="780" y="230" key="RollbackChangesDialog" timestamp="1594414670762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="780" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594414670762" />
     <state x="567" y="124" width="995" height="711" key="SettingsEditor" timestamp="1594384943077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

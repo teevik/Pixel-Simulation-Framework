@@ -18,7 +18,7 @@ namespace PixelSimulationFramework
         private readonly ITile[,] _tiles;
         private readonly Dictionary<ITile, Vector2Int?> _tilePositions;
         private readonly Dictionary<ITile, TileData?> _tileDatas;
-        private readonly HashSet<ITile> _unstaleTiles;
+        private readonly HashSet<Vector2Int> _unstaleTilePositions;
         private bool _needsApply = false;
         private DirtyRect? _dirtyRect = null;
 
@@ -31,7 +31,7 @@ namespace PixelSimulationFramework
             _tiles = new ITile[chunkDimensions.x, chunkDimensions.y];
             _tilePositions = new Dictionary<ITile, Vector2Int?>();
             _tileDatas = new Dictionary<ITile, TileData?>();
-            _unstaleTiles = new HashSet<ITile>();
+            _unstaleTilePositions = new HashSet<Vector2Int>();
             _dirtyRect = new DirtyRect
             {
                 StartTilePosition = Vector2Int.zero, 
@@ -43,11 +43,12 @@ namespace PixelSimulationFramework
         {
             if (_dirtyRect is DirtyRect dirtyRect)
             {
-                for (var x = dirtyRect.StartTilePosition.x; x < dirtyRect.EndTilePosition.x; x++)
+                for (var x = Math.Max(0, dirtyRect.StartTilePosition.x); x < Math.Min(_chunkDimensions.x, dirtyRect.EndTilePosition.x); x++)
                 {
-                    for (var y = dirtyRect.StartTilePosition.y; y < dirtyRect.EndTilePosition.y; y++)
+                    for (var y = Math.Max(0, dirtyRect.StartTilePosition.y); y < Math.Min(_chunkDimensions.y, dirtyRect.EndTilePosition.y); y++)
                     {
                         var tile = _tiles[x, y];
+                        var currentTilePosition = new Vector2Int(x, y);
                         
                         if (tile == null) continue;
                         var tileData = _tileDatas[tile].Value;
@@ -59,7 +60,7 @@ namespace PixelSimulationFramework
 
                         bool ApiTileExistsAt(Side side)
                         {
-                            if (GetNeighboringTilePosition(new Vector2Int(x, y), side, out var neighborTilePosition, out var neighborChunk))
+                            if (GetNeighboringTilePosition(currentTilePosition, side, out var neighborTilePosition, out var neighborChunk))
                             {
                                 return neighborChunk.TileExistsAt(neighborTilePosition);
                             }
@@ -69,7 +70,7 @@ namespace PixelSimulationFramework
                         
                         ITile ApiGetTileAtSide(Side side)
                         {
-                            if (GetNeighboringTilePosition(new Vector2Int(x, y), side, out var neighborTilePosition, out var neighborChunk))
+                            if (GetNeighboringTilePosition(currentTilePosition, side, out var neighborTilePosition, out var neighborChunk))
                             {
                                 if (neighborChunk.TileExistsAt(neighborTilePosition))
                                     return neighborChunk._tiles[neighborTilePosition.x, neighborTilePosition.y];
@@ -88,74 +89,128 @@ namespace PixelSimulationFramework
 
                         if (updateResult.Value.WantToGoStale ?? false)
                         {
-                            _unstaleTiles.Remove(tile);
+                            _unstaleTilePositions.Remove(currentTilePosition);
                             _tileDatas[tile] = newTileData;
                         }
                         else
                         {
-                            _unstaleTiles.Add(tile);
                             _tileDatas[tile] = newTileData;
-                            
+
                             if (updateResult.Value.WantedMovement != null)
                             {
-                                TryMoveTileRelative(new Vector2Int(x, y), updateResult.Value.WantedMovement.Value);   
+                                TryMoveTileRelative(currentTilePosition, updateResult.Value.WantedMovement.Value);
                             }
                         }
                     } 
                 }
             }
             
-            if (_unstaleTiles.Count == 0)
-            {
-                _dirtyRect = null;
-            }
-            else
-            {
-                var startDirtyRectZone = _chunkDimensions;
-                var endDirtyRectZone = Vector2Int.zero;
+            // if (_unstaleTilePositions.Count == 0)
+            // {
+            //     _dirtyRect = null;
+            // }
+            // else
+            // {
+            var startDirtyRectZone = Vector2Int.zero;
+            var endDirtyRectZone = Vector2Int.zero;
 
-                foreach (var unstaleTile in _unstaleTiles)
+            if (_unstaleTilePositions.Count > 0)
+            {
+                startDirtyRectZone = _chunkDimensions;
+                endDirtyRectZone = Vector2Int.zero;
+                
+                foreach (var unstaleTilePosition in _unstaleTilePositions)
                 {
-                    var tilePosition = _tilePositions[unstaleTile].Value;
-
-                    if (tilePosition.x > endDirtyRectZone.x) endDirtyRectZone.x = tilePosition.x;
-                    if (tilePosition.x < startDirtyRectZone.x) startDirtyRectZone.x = tilePosition.x;
-                    if (tilePosition.y > endDirtyRectZone.y) endDirtyRectZone.y = tilePosition.y;
-                    if (tilePosition.y < startDirtyRectZone.y) startDirtyRectZone.y = tilePosition.y;
+                    if (unstaleTilePosition.x > endDirtyRectZone.x) endDirtyRectZone.x = unstaleTilePosition.x;
+                    if (unstaleTilePosition.x < startDirtyRectZone.x) startDirtyRectZone.x = unstaleTilePosition.x;
+                    if (unstaleTilePosition.y > endDirtyRectZone.y) endDirtyRectZone.y = unstaleTilePosition.y;
+                    if (unstaleTilePosition.y < startDirtyRectZone.y) startDirtyRectZone.y = unstaleTilePosition.y;
                 }
 
                 startDirtyRectZone -= Vector2Int.one * 2;
                 endDirtyRectZone += Vector2Int.one * 2;
+            } 
 
-                foreach (var sideNeighborsPair in _neighbors)
+
+            foreach (var sideNeighborsPair in _neighbors)
+            {
+                var (neighborSide, neighborChunk) = (sideNeighborsPair.Key, sideNeighborsPair.Value);
+            
+                var sideAsVector = neighborSide.SideAsVector();
+                
+
+                var neighborDirtyRect = neighborChunk._dirtyRect.Value;
+                
+                var relativeStartTilePosition = neighborDirtyRect.StartTilePosition + (sideAsVector * _chunkDimensions);
+                var relativeEndTilePosition = neighborDirtyRect.EndTilePosition + (sideAsVector * _chunkDimensions);
+
+                if (TilePositionIsInBounds(relativeStartTilePosition))
                 {
-                    var (side, chunk) = (sideNeighborsPair.Key, sideNeighborsPair.Value);
-
-                    var sideAsVector = side.SideAsVector();
                     
-                    // var portrudesToChunkHorizontally =
-                    //     (startDirtyRectZone.x < 0 || startDirtyRectZone.x > _chunkDimensions.x) &&
-                    //     (startDirtyRectZone.x / _chunkDimensions.x) == sideAsVector.x;
-                    //
-                    // var portrudesToChunkVertically =
-                    //     (startDirtyRectZone.y < 0 || startDirtyRectZone.y > _chunkDimensions.x) &&
-                    //     startDirtyRectZone.x == sideAsVector.x;
-                    //
-                    // if (portrudesToChunkHorizontally || portrudesToChunkVertically)
+                }
+
+                
+                foreach (var dirtyRectPart in new[] { neighborDirtyRect.StartTilePosition, neighborDirtyRect.EndTilePosition })
+                {
+                    var relativePosition = dirtyRectPart + (sideAsVector * _chunkDimensions);
+                    // Debug.Log(relativePosition);
+
+                    // if (dirtyRectPart.x < 0 && sideAsVector.x < 0)
                     // {
-                    //     Debug.Log("aa");
+                    //     if (dirtyRectPart.y < 0 && sideAsVector.y < 0)
+                    //     {
+                    //         // Left Up
+                    //         if (s)
+                    //     } else if (dirtyRectPart.y > _chunkDimensions.y && sideAsVector.y > 0)
+                    //     {
+                    //         // Left Down
+                    //     }
+                    //     else
+                    //     {
+                    //         // Left
+                    //     }
+                    // }
+                    // else if (dirtyRectPart.x > _chunkDimensions.x && sideAsVector.x > 0)
+                    // {
+                    //     if (dirtyRectPart.y < 0 && sideAsVector.y < 0)
+                    //     {
+                    //         // Right Up
+                    //     } else if (dirtyRectPart.y > _chunkDimensions.y && sideAsVector.y > 0)
+                    //     {
+                    //         // Right Down
+                    //     }
+                    //     else
+                    //     {
+                    //         // Right
+                    //     }
+                    // }
+                    // else
+                    // {
+                    //     if (dirtyRectPart.y < 0 && sideAsVector.y < 0)
+                    //     {
+                    //         // Up
+                    //     } else if (dirtyRectPart.y > _chunkDimensions.y && sideAsVector.y > 0)
+                    //     {
+                    //         // Down
+                    //     }
+                    //     else
+                    //     {
+                    //         // Center?
+                    //     }
                     // }
                 }
-                
-                startDirtyRectZone.Clamp(Vector2Int.zero, _chunkDimensions);
-                endDirtyRectZone.Clamp(Vector2Int.zero, _chunkDimensions);
-
-                _dirtyRect = new DirtyRect
-                {
-                    StartTilePosition = startDirtyRectZone,
-                    EndTilePosition = endDirtyRectZone
-                };
             }
+            
+            
+            startDirtyRectZone.Clamp(-Vector2Int.one * 2, _chunkDimensions + Vector2Int.one * 2);
+            endDirtyRectZone.Clamp(-Vector2Int.one * 2, _chunkDimensions + Vector2Int.one * 2);
+
+            _dirtyRect = new DirtyRect
+            {
+                StartTilePosition = startDirtyRectZone,
+                EndTilePosition = endDirtyRectZone
+            };
+            // }
         }
 
         public void LateUpdate()
@@ -224,7 +279,7 @@ namespace PixelSimulationFramework
             _tilePositions[tile] = tilePosition;
             _tileDatas[tile] = tileData;
             
-            if (!tile.DefaultIsStale) _unstaleTiles.Add(tile);
+            if (!tile.DefaultIsStale) _unstaleTilePositions.Add(tilePosition);
             
             DrawTile(tilePosition, tileData.CurrentColor);
         }
@@ -235,7 +290,7 @@ namespace PixelSimulationFramework
             _tiles[tilePosition.x, tilePosition.y] = null;
             _tilePositions[tile] = null;
             _tileDatas[tile] = null;
-            _unstaleTiles.Remove(tile);
+            _unstaleTilePositions.Remove(tilePosition);
 
             DrawClearTile(tilePosition);
         }
